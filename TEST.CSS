@@ -1,0 +1,35 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+div > img {
+    width: 50%;
+ /*   height:auto; Unnecessary */
+    
+}
+
+div > p {    
+    text-align: center;
+    font-size: 2vw;
+}
+
+.backgroundImage {
+    position: relative;
+}
+
+.backgroundImage::before {
+    content: " ";  
+    position: absolute;    
+    top: 0px;    
+    left: 0px;    
+    width: 120%;
+    height: 450%;
+    opacity: 0.4;
+    background-image: url('/NAIL IMAGES/MAIN_BACKGROUND_IMAGE 1.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-attachment: fixed;
+    z-index: 0;  /* Bottom or lowest underneath z-layer level*/
+}
